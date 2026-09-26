@@ -73,7 +73,7 @@ public class _00_StringMethodsDemo {
         //            searching for the character until the end of the string
         String substring = "to";
         int numOccurances = 0;
-        index = str.indexOf("to");
+        index = str.indexOf(substring);
         while( index != -1 ) {
             numOccurances++;
             index = str.indexOf(substring, index + substring.length());

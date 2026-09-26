@@ -42,20 +42,20 @@ class _01_StringMethodsTest {
         assertEquals(3, _01_StringMethods.substringCount("Here I'm counting spaces"," "));
         assertEquals(0, _01_StringMethods.substringCount("There shoudn't be matches here", "tuna"));
     }
-//
-//    @Test
-//    void testEncrypt() {
-//        assertEquals("KwYPDww=", _01_StringMethods.encrypt("Hello", 'c'));
-//        assertEquals("FCglYAwlISc1JWAvJmABLSE6KS4nYBAyLycyIS0tJTIz", _01_StringMethods.encrypt("The League of Amazing Programmers", '@'));
-//        assertEquals("JBkdFVAEH1AVEQRQAx8dFVAAAhUEChUcAw==", _01_StringMethods.encrypt("Time to eat some pretzels", 'p'));
-//    }
-//
-//    @Test
-//    void testDecrypt() {
-//        assertEquals("Hello", _01_StringMethods.decrypt("KwYPDww=", 'c'));
-//        assertEquals("The League of Amazing Programmers", _01_StringMethods.decrypt("FCglYAwlISc1JWAvJmABLSE6KS4nYBAyLycyIS0tJTIz" , '@'));
-//        assertEquals("Time to eat some pretzels", _01_StringMethods.decrypt("JBkdFVAEH1AVEQRQAx8dFVAAAhUEChUcAw==", 'p'));
-//    }
+
+    @Test
+    void testEncrypt() {
+        assertEquals("KwYPDww=", _01_StringMethods.encrypt("Hello", 'c'));
+        assertEquals("FCglYAwlISc1JWAvJmABLSE6KS4nYBAyLycyIS0tJTIz", _01_StringMethods.encrypt("The League of Amazing Programmers", '@'));
+        assertEquals("JBkdFVAEH1AVEQRQAx8dFVAAAhUEChUcAw==", _01_StringMethods.encrypt("Time to eat some pretzels", 'p'));
+    }
+
+    @Test
+    void testDecrypt() {
+        assertEquals("Hello", _01_StringMethods.decrypt("KwYPDww=", 'c'));
+        assertEquals("The League of Amazing Programmers", _01_StringMethods.decrypt("FCglYAwlISc1JWAvJmABLSE6KS4nYBAyLycyIS0tJTIz" , '@'));
+        assertEquals("Time to eat some pretzels", _01_StringMethods.decrypt("JBkdFVAEH1AVEQRQAx8dFVAAAhUEChUcAw==", 'p'));
+    }
 //
 //    @Test
 //    void testWordsEndWithSubstring() {
