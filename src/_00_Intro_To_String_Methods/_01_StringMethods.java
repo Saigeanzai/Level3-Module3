@@ -117,16 +117,12 @@ public class _01_StringMethods {
 	public static int wordsEndsWithSubstring(String s, String substring) {
 		int num = 0;
 		String[] words = s.split(" ");
-		int index = s.indexOf(substring);
-		while (index != -1) {
-			for (int i = 0; i < words.length; i++) {
-				if (words[i].length() > substring.length()) {
-					if (words[i].length() - substring.length() == words[i].indexOf(substring)-1) {
-						num ++;
-					}
+		for (int i = 0; i < words.length; i++) {
+			if (words[i].length() >= substring.length()) {
+				if (words[i].length() - substring.length() == words[i].lastIndexOf(substring)) {
+					num++;
 				}
 			}
-
 		}
 		return num;
 	}
@@ -135,6 +131,10 @@ public class _01_StringMethods {
 	// occurrence of String substring and the final occurrence
 	// You can assume that substring will appear at least twice
 	public static int distance(String s, String substring) {
+		int numChar = 0;
+		int firstIndex = s.indexOf(substring);
+		int lastIndex = s.lastIndexOf(substring);
+		int length = s.length();
 		return 0;
 	}
 

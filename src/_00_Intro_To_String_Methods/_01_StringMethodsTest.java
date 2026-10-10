@@ -64,14 +64,14 @@ class _01_StringMethodsTest {
         assertEquals(7, _01_StringMethods.wordsEndsWithSubstring("Here are multiple words that have the same letter at the end.", "e"));
         assertEquals(0, _01_StringMethods.wordsEndsWithSubstring("This should give us zero matches", "lemonade"));
     }
-//
-//    @Test
-//    void testDistance() {
-//        assertEquals(6, _01_StringMethods.distance("subsubsubsub", "sub"));
-//        assertEquals(7, _01_StringMethods.distance("subsubsubsub", "ub"));
-//        assertEquals(28, _01_StringMethods.distance("The League The Le ague TheLeag ue The League", "League"));
-//        assertEquals(0, _01_StringMethods.distance("bb", "b"));
-//    }
+
+    @Test
+    void testDistance() {
+        assertEquals(6, _01_StringMethods.distance("subsubsubsub", "sub"));
+        assertEquals(7, _01_StringMethods.distance("subsubsubsub", "ub"));
+        assertEquals(28, _01_StringMethods.distance("The League The Le ague TheLeag ue The League", "League"));
+        assertEquals(0, _01_StringMethods.distance("bb", "b"));
+    }
 //
 //    @Test
 //    void testPalindrome() {
