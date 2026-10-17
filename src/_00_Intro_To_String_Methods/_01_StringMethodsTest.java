@@ -72,17 +72,17 @@ class _01_StringMethodsTest {
         assertEquals(28, _01_StringMethods.distance("The League The Le ague TheLeag ue The League", "League"));
         assertEquals(0, _01_StringMethods.distance("bb", "b"));
     }
-//
-//    @Test
-//    void testPalindrome() {
-//        assertTrue(_01_StringMethods.palindrome("ABA"));
-//        assertTrue(_01_StringMethods.palindrome("ABBA"));
-//        assertTrue(_01_StringMethods.palindrome("racecar"));
-//        assertTrue(_01_StringMethods.palindrome("Was it a cat I saw?"));
-//        assertTrue(_01_StringMethods.palindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal - Panama"));
-//        assertTrue(_01_StringMethods.palindrome("Doc, Note: I Dissent. A Fast Never Prevents A Fatness. I Diet On Cod."));
-//        assertFalse(_01_StringMethods.palindrome("abcdefghijklmnopqrstuvwxyz"));
-//        assertFalse(_01_StringMethods.palindrome("This is not a palendrome"));
-//        assertFalse(_01_StringMethods.palindrome("This is close but not quite right etiuq ton tub esolc si sihT"));
-//    }
+
+    @Test
+    void testPalindrome() {
+        assertTrue(_01_StringMethods.palindrome("ABA"));
+        assertTrue(_01_StringMethods.palindrome("ABBA"));
+        assertTrue(_01_StringMethods.palindrome("racecar"));
+        assertTrue(_01_StringMethods.palindrome("Was it a cat I saw?"));
+        assertTrue(_01_StringMethods.palindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal - Panama"));
+        assertTrue(_01_StringMethods.palindrome("Doc, Note: I Dissent. A Fast Never Prevents A Fatness. I Diet On Cod."));
+        assertFalse(_01_StringMethods.palindrome("abcdefghijklmnopqrstuvwxyz"));
+        assertFalse(_01_StringMethods.palindrome("This is not a palendrome"));
+        assertFalse(_01_StringMethods.palindrome("This is close but not quite right etiuq ton tub esolc si sihT"));
+    }
 }
