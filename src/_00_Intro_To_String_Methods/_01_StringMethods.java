@@ -144,7 +144,9 @@ public class _01_StringMethods {
 	// palindromes are words or phrases are read the same forward as backward.
 	// HINT: ignore/remove all punctuation and spaces in the String
 	public static boolean palindrome(String s) {
-		String s2 = s.trim().replaceAll("[^ -~]+/g", "").replaceAll(" ", "").toLowerCase();
+		System.out.println(s);
+		String s2 = s.trim().replaceAll("[^a-zA-Z]", "").toLowerCase();
+		System.out.println(s2);
 		for(int i=0; i<(s2.length()/2); i++) {
 			if (s2.charAt(i)!=s2.charAt(s2.length()-1-i)) {
 				return false;

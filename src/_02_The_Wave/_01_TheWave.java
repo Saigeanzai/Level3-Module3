@@ -20,7 +20,7 @@ public class _01_TheWave {
      */
     
     public static ArrayList<String> wave(String str) {
-        
+        System.out.println(str);
         return null;
     }
 }
